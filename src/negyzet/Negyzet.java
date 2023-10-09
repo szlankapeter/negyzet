@@ -9,31 +9,44 @@ package negyzet;
  * @author szlanka.peter
  */
 public class Negyzet {
+
     
-    private int x;
-    private int y;
+    private Koordináta k;
     private int oldal;
 
-    public void setX(int x) {
-        this.x = x;
+    public Negyzet(Koordináta k, int oldal) {
+        this.k = k;
+        if (this.oldal < 0) {
+            this.oldal = 1;
+        } else {
+            this.oldal = oldal;
+        }
     }
 
-    public void setY(int y) {
-        this.y = y;
+    public String allapot() {
+        return "x=" + k.getX() + " y=" + k.getY() + " oldal=" + this.oldal + " T=" + terulet();
+    }
+
+    private int terulet() {
+        return this.oldal * this.oldal;
     }
 
     public void setOldal(int oldal) {
         this.oldal = oldal;
     }
     
-    public String allapot(){
-        return "x=" + this.x + " y=" + this.y + " oldal=" + this.oldal + " T=" + terulet();
+    public void setK(Koordináta k) {
+        this.k = k;
+    }
+
+    public int getOldal() {
+        return oldal;
     }
     
-    public int terulet(){
-        return this.oldal * this.oldal;
+    public Koordináta getK() {
+        return k;
     }
     
     
-    
+
 }
