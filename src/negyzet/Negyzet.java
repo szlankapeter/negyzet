@@ -6,6 +6,14 @@ public class Negyzet {
     private Koordináta k;
     private int oldal;
 
+    public Negyzet(){
+        this(1);
+    }
+    
+    public Negyzet(int a){
+        this(new Koordináta(0, 0), a);
+    }
+    
     public Negyzet(Koordináta k, int oldal) {
         this.k = k;
         if (this.oldal < 0) {
@@ -22,8 +30,6 @@ public class Negyzet {
     private int terulet() {
         return this.oldal * this.oldal;
     }
-
-
     
     public void setK(Koordináta k) {
         this.k = k;
