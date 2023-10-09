@@ -26,7 +26,7 @@ public class Negyzet {
     public String allapot() {
         return "x=" + k.getX() + " y=" + k.getY() + " oldal=" + this.oldal + " T=" + terulet();
     }
-
+    
     private int terulet() {
         return this.oldal * this.oldal;
     }
@@ -42,14 +42,9 @@ public class Negyzet {
     public Koordináta getK() {
         return k;
     }
-    
 
-    public void osszehasonlit(Negyzet n){
-        if(this.oldal == n.oldal){
-            System.out.println("Egyformák");
-        }else{
-            System.out.println("Nem egyformák");
-        }
+    public boolean osszehasonlit(Negyzet n){
+        return this.oldal == n.oldal;
     }
     
 }
