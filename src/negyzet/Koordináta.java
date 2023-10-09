@@ -13,6 +13,10 @@ public class Koordináta {
     private int x;
     private int y;
 
+    public Koordináta(){
+        this(0, 0);
+    }
+    
     public Koordináta(int x, int y) {
         this.x = x;
         this.y = y;

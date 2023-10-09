@@ -7,9 +7,11 @@ public class Program {
     }
     
     public void feladat(){
-        Koordináta k = new Koordináta(3, 4);
-        Negyzet a = new Negyzet(k, 5);
+        Negyzet a = new Negyzet(new Koordináta(3, 4), 5);
+        Negyzet b = new Negyzet(new Koordináta(1, 4), 5);
+        
         System.out.println(a.allapot());
+        a.osszehasonlit(b);
 
     }
     

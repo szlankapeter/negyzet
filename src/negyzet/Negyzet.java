@@ -11,7 +11,7 @@ public class Negyzet {
     }
     
     public Negyzet(int a){
-        this(new Koordináta(0, 0), a);
+        this(new Koordináta(), a);
     }
     
     public Negyzet(Koordináta k, int oldal) {
@@ -44,4 +44,12 @@ public class Negyzet {
     }
     
 
+    public void osszehasonlit(Negyzet n){
+        if(this.oldal == n.oldal){
+            System.out.println("Egyformák");
+        }else{
+            System.out.println("Nem egyformák");
+        }
+    }
+    
 }
