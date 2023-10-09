@@ -8,10 +8,11 @@ public class Program {
     
     public void feladat(){
         Negyzet a = new Negyzet();
-        a.setOldal(5);
-        a.setX(3);
-        a.setY(4);
-        System.out.println(a.allapot());
+        Koordinata kr = new Koordinata();
+        a.setOldal(10);
+        kr.setX(20);
+        kr.setY(29);
+        System.out.println(a.allapot(kr.getX(),kr.getY()));
     }
     
 }
