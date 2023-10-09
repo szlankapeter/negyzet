@@ -1,13 +1,5 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package negyzet;
 
-/**
- *
- * @author szlanka.peter
- */
 public class Negyzet {
 
     
@@ -31,9 +23,7 @@ public class Negyzet {
         return this.oldal * this.oldal;
     }
 
-    public void setOldal(int oldal) {
-        this.oldal = oldal;
-    }
+
     
     public void setK(Koordináta k) {
         this.k = k;
@@ -46,7 +36,6 @@ public class Negyzet {
     public Koordináta getK() {
         return k;
     }
-    
     
 
 }

@@ -10,6 +10,7 @@ public class Program {
         Koordináta k = new Koordináta(3, 4);
         Negyzet a = new Negyzet(k, 5);
         System.out.println(a.allapot());
+
     }
     
 }
