@@ -12,7 +12,6 @@ public class Program {
         a.setX(3);
         a.setY(4);
         System.out.println(a.allapot());
-        System.out.println(a.terulet());
     }
     
 }

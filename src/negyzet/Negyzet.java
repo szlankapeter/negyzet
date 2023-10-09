@@ -26,13 +26,12 @@ public class Negyzet {
         this.oldal = oldal;
     }
     
-    
     public String allapot(){
-        return "x=" + this.x + " y=" + this.y + " oldal=" + this.oldal;
+        return "x=" + this.x + " y=" + this.y + " oldal=" + this.oldal + " T=" + terulet();
     }
     
     public int terulet(){
-        return oldal * oldal;
+        return this.oldal * this.oldal;
     }
     
     
